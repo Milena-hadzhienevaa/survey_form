@@ -1,0 +1,44 @@
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Формуляр за проучване</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Име:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Имейл:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Пол:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Мъж</label>
+                    <label><input type="radio" name="gender" value="female"> Жена</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Възрастова група:</label>
+                <select id="age" name="age">
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-45">36-45</option>
+                    <option value="46+">46+</option>
+                </select>
+            </div>
+            
+            <button type="submit">Изпрати</button>
+        </form>
+    </div>
+</body>
+</html>
