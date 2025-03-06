@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1.title {
+    font-family: 'Georgia', serif;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.hover-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #444;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hover-button:hover {
+    background-color: #666;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.slideshow-container img {
+    width: 45%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+    transition: background-color 0.6s ease;
+}
+
+.animated-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #444;
+    color: white;
+    text-decoration: none;
+    animation: animateButton 2s infinite;
+    transition: background-color 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: #666;
+}
+
+@keyframes animateButton {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.video {
+    padding-top: 100px; 
+}
+
+.video iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.grid-layout img {
+    width: 450px; 
+    height: 700px; 
+}

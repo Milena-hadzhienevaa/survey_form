@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page to Sade</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 50px;
+        }
+
+        .gaga-container {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            animation: pulse 2s infinite alternate;
+        }
+
+        .gaga-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 0 20px pink;
+            animation: spin 5s linear infinite;
+        }
+
+        .gaga-text {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: fade 3s infinite alternate;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0.2;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">About Lady Gaga</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Gaga</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Who is this divaa?!</h2>
+        <p>Some facts about her:</p>
+        <p> She took the name "Lady Gaga" from the Queen song "Radio Ga Ga", which her producer used to text her.Before becoming Lady Gaga, she performed under her real name Stefani Germanotta in the New York underground music scene.</p>
+        <p> She Has Performed in Crazy Outfits (Including Meat!)
+            Her raw meat dress at the 2010 MTV VMAs became one of the most talked-about moments in pop culture history.</p>
+        <p>Gaga is a big fan of video games like Bayonetta and Cyberpunk 2077. She has tweeted about her love for gaming multiple times.</p>
+        <h1>✨ Lady Gaga ✨</h1>
+        <div class="gaga-container">
+            <img src="https://cdn.britannica.com/57/136557-050-0FFC3C93/Lady-Gaga-ceremony-Grammy-Awards-Los-Angeles-Jan-31-2010.jpg" alt="Lady Gaga" class="gaga-image">
+        </div>
+        <div class="gaga-text">Born This Way 💖</div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tribute Page to Lady Gaga</p>
+    </footer>
+</body>
